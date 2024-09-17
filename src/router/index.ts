@@ -4,6 +4,7 @@ import LoanView from '../views/LoanView.vue'
 import TestingView from '../views/TestingView.vue'
 import ProductsList from '../components/products/ListComponent.vue'
 import TestingHome from '../components/TestingHome.vue'
+import AccountView from '@/views/AccountView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,6 +32,11 @@ const router = createRouter({
       path: '/loans',
       name: 'Empréstimos',
       component: LoanView
+    },
+    {
+      path: '/account',
+      name: 'Conta',
+      component: AccountView
     }
   ]
 })

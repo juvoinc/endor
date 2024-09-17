@@ -23,6 +23,9 @@ const carrierStore = useCarrierStore()
         <li>
           <RouterLink to="/testing">Testing</RouterLink>
         </li>
+        <li>
+          <RouterLink to="/account">Ver informações da conta</RouterLink>
+        </li>
       </ul>
     </div>
   </aside>

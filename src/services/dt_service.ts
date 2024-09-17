@@ -4,7 +4,7 @@ let token =
   '_9WWnt4gcEVHI3q4sVeo/l4D7Yt48Q6/XQ4n7PNk6vet9msP8mZwu20qLWA7GJ7aq1LeKZLQOa/QMZfW8HHjk+Q==_'
 
 const dtClient = axios.create({
-  baseURL: 'http://localhost:3000/dt',
+  baseURL: 'http://dt-dev-eks.5886662453.com/dt',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',

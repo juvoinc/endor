@@ -5,11 +5,11 @@ import { sendRepayment } from '@/services/dt_service'
 export const useRepaymentStore = defineStore(
   'repayment',
   () => {
-    const repayment = ref({})
+    const repayment = ref(0)
     const createRepayment = async () => {
       try {
         const response = await sendRepayment()
-        repayment.value = response.data
+        repayment.value = response.status
         console.log(repayment.value)
       } catch (error) {
         console.error('Error fetching Purchases:', error)
